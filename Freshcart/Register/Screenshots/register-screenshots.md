@@ -30,3 +30,18 @@ Instead of showing an error message like "Name must not exceed character limit",
 
 ### JIRA Ticket
 🔗 [KAN-8 - Name Field Has No Maximum Character Limit](https://safynazibrahim4.atlassian.net/browse/KAN-8)
+
+---
+
+## 🐞 Bug 3 — Name Field Accepts Numbers Without Validation
+
+![Bug 3 Screenshot](bug3.png)
+
+### Description
+When the user enters a name containing numbers (e.g., Safynaz123) and clicks Register, the system does not display any validation error.
+Instead of showing an error message like "Name must contain letters only", the system registers the user successfully — meaning there is no letters-only validation on the name field.
+
+### JIRA Ticket
+🔗 [KAN-9 - Name Field Accepts Numbers Without Validation](https://safynazibrahim4.atlassian.net/browse/KAN-9)
+
+---
