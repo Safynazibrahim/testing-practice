@@ -19,3 +19,14 @@ This prevents the user from understanding the exact issue and how to fix it.
 🔗 [KAN-7 - Validation Error Message Issue](https://safynazibrahim4.atlassian.net/browse/KAN-7)
 
 ---
+## 🐞 Bug 2 — Name Field Has No Maximum Character Limit
+
+![Bug 2 Screenshot](bug2.png)
+
+### Description
+When the user enters a name with 100 characters and clicks Register, the system does not display any validation error.
+
+Instead of showing an error message like "Name must not exceed character limit", the system registers the user successfully — meaning there is no maximum length validation on the name field.
+
+### JIRA Ticket
+🔗 [KAN-8 - Name Field Has No Maximum Character Limit](https://safynazibrahim4.atlassian.net/browse/KAN-8)
