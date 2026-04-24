@@ -97,3 +97,25 @@ TC-Reg-15 — Email with special characters
 🔗 [KAN-12 - Email Field Accepts Special Characters Without Validation](paste KAN-12 link here after creating in JIRA)
 
 ---
+## 🐞 Bug 7 — Wrong Error Message When Password Contains Spaces
+
+![Bug 7 Screenshot](bug7.png)
+
+### Description
+When the user enters a password containing spaces (e.g., Safy 123), the system correctly rejects it and disables the button — but displays the wrong error message.
+
+Instead of showing "Password cannot contain spaces", the system shows "Password must be at least 6 chars".
+
+Investigation showed that the system trims spaces before counting characters:
+- "S a f y 1" → trimmed to "Safy1" → shows length error instead of spaces error
+- "      " → trimmed to "" → shows length error instead of spaces error
+
+Frontend validation exists and button is correctly disabled — only the error message is wrong.
+
+### Test Case
+TC-Reg-26 — Password with spaces
+
+### JIRA Ticket
+🔗 [KAN-13 - Wrong Error Message When Password Contains Spaces](https://safynazibrahim4.atlassian.net/browse/KAN-13)
+
+---
