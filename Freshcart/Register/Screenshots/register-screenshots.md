@@ -45,3 +45,15 @@ Instead of showing an error message like "Name must contain letters only", the s
 🔗 [KAN-9 - Name Field Accepts Numbers Without Validation](https://safynazibrahim4.atlassian.net/browse/KAN-9)
 
 ---
+## 🐞 Bug 4 — Name Field Accepts Special Characters Without Validation
+
+![Bug 4 Screenshot](bug4.png)
+
+### Description
+When the user enters a name containing special characters (e.g., Safy@#$%) and clicks Register, the system does not display any validation error.
+Instead of showing an error message like "Name must contain letters only", the system registers the user successfully — meaning there is no special character restriction on the name field.
+
+### JIRA Ticket
+🔗 [KAN-10 - Name Field Accepts Special Characters Without Validation](https://safynazibrahim4.atlassian.net/browse/KAN-10)
+
+---
