@@ -119,3 +119,23 @@ TC-Reg-26 — Password with spaces
 🔗 [KAN-13 - Wrong Error Message When Password Contains Spaces](https://safynazibrahim4.atlassian.net/browse/KAN-13)
 
 ---
+## 🐞 Bug 8 — Phone Field Displays Generic Error Message For All Validation Cases
+
+![Bug 8 Screenshot](bug8.png)
+
+### Description
+When the user enters any invalid phone number format, the system correctly rejects it but always displays the same generic message "Accept only Egyptian phones" regardless of the specific validation error.
+
+Each invalid case should show a specific and helpful error message so the user understands exactly what is wrong.
+
+Affected cases:
+- Phone with letters → TC-Reg-40
+- Phone with special chars → TC-Reg-41
+- Phone with spaces → TC-Reg-42
+- Phone not starting with 0 → TC-Reg-43
+- Phone with all zeros → TC-Reg-44
+
+### JIRA Ticket
+🔗 [KAN-15 - Phone Field Displays Generic Error Message For All Validation Cases](https://safynazibrahim4.atlassian.net/browse/KAN-15)
+
+---
