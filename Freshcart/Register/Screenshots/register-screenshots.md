@@ -74,8 +74,26 @@ Server correctly returns "invalid email" error.
 But frontend displays generic "Fail" message instead of real error.
 User cannot understand what is wrong with their input.
 
-
 ### JIRA Ticket
 🔗 [KAN-11 - Email Field Has No Frontend Validation And Displays Wrong Error Message](https://safynazibrahim4.atlassian.net/browse/KAN-11)
+---
+
+## 🐞 Bug 6 — Email Field Accepts Special Characters Without Validation
+
+![Bug 6 Screenshot](bug6.png)
+
+### Description
+When the user enters an email containing invalid special characters (e.g., safy#naz@gmail.com) and clicks Register, the system does not display any validation error.
+Instead of showing "Invalid email format", the system registers the user successfully.
+Invalid email addresses are being saved in the system — meaning the user may register with an email they can never actually use.
+
+### Test Case
+TC-Reg-15 — Email with special characters
+
+### Related Bug
+🔗 Similar frontend validation issue as KAN-11
+
+### JIRA Ticket
+🔗 [KAN-12 - Email Field Accepts Special Characters Without Validation](paste KAN-12 link here after creating in JIRA)
 
 ---
