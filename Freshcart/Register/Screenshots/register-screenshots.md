@@ -57,3 +57,25 @@ Instead of showing an error message like "Name must contain letters only", the s
 🔗 [KAN-10 - Name Field Accepts Special Characters Without Validation](https://safynazibrahim4.atlassian.net/browse/KAN-10)
 
 ---
+## 🐞 Bug 5 — Email Field Has No Frontend Validation And Displays Wrong Error Message
+
+![Bug 5 Screenshot](bug5.png)
+
+### Description
+When the user enters an email without a dot in the domain (e.g., safynaz@gmailcom) and clicks Register, two problems occur:
+
+**Problem 1 — No Frontend Validation:**
+Email format is not validated on the field level before submitting.
+Invalid email triggers an unnecessary server request — wasting resources.
+Error should appear on the field itself before any server call.
+
+**Problem 2 — Wrong Error Message:**
+Server correctly returns "invalid email" error.
+But frontend displays generic "Fail" message instead of real error.
+User cannot understand what is wrong with their input.
+
+
+### JIRA Ticket
+🔗 [KAN-11 - Email Field Has No Frontend Validation And Displays Wrong Error Message](https://safynazibrahim4.atlassian.net/browse/KAN-11)
+
+---
