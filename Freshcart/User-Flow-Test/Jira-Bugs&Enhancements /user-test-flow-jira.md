@@ -10,6 +10,6 @@ This file contains all reported bugs related to the User Flow functionality (Bro
 ---
 
 ### 💡 Improvements
-- Search uses frontend filtering only — no backend API call: [paste KAN link here after creating in JIRA]
+- Search uses frontend filtering only — no backend API call: [https://safynazibrahim4.atlassian.net/browse/KAN-17]
 
 ---
