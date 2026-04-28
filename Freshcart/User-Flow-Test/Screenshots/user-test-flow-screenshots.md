@@ -6,7 +6,7 @@ This file contains visual evidence of bugs found during testing of the User Flow
 
 ## 🐞 Bug 1 — Search Returns Irrelevant Products Not Matching Keyword
 
-![Bug 1 Screenshot](userflow-bug1.png)
+![Bug 1 Screenshot](bug1.png)
 
 ### Description
 When the user searches for "sock", the system returns irrelevant results.
