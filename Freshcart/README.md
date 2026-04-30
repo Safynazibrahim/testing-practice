@@ -13,22 +13,26 @@ Apply software testing concepts by designing and executing structured test cases
 ## 🔍 Scope of Testing
 
 ### ✅ Login Functionality (Completed)
-- Valid login scenarios
-- Invalid credentials
-- Input validation (empty fields, incorrect format)
-- Negative test cases
+- Valid & invalid login scenarios
+- Input validation
+- Negative testing
 
 ### ✅ Register Functionality (Completed)
-- Name field validation (empty, too short, numbers, special chars, spaces)
-- Email field validation (empty, invalid format, special chars, duplicate)
-- Password field validation (empty, too short, spaces, numbers only, letters only)
-- Repassword field validation (empty, not matching, case sensitivity)
-- Phone field validation (empty, too short, too long, letters, special chars, spaces)
+- Full validation for all fields (Name, Email, Password, Repassword, Phone)
+- Boundary Value Analysis & Equivalence Partitioning
 
-### ⏳ Coming Next
-- Cart functionality
-- Checkout functionality
-- Edge cases expansion
+### ✅ User Flow Testing (NEW 🔥)
+End-to-end testing covering real user journey:
+
+- Login → Browse → Search → View Product → Add to Cart → Manage Cart
+
+Covered:
+- Product listing & UI validation
+- Search functionality (valid, invalid, edge cases)
+- Product details & images slider
+- Add to cart & toast behavior
+- Cart operations (زيادة / تقليل / حذف)
+- Cart persistence (refresh + re-login)
 
 ---
 
@@ -38,18 +42,18 @@ Apply software testing concepts by designing and executing structured test cases
 |---|---|---|---|
 | Login | 10 | 3 | 1 |
 | Register | 44 | 8 | 1 |
-| **Total** | **54** | **11** | **2** |
+| User Flow | 30 | 5 | 0 |
+| **Total** | **84** | **16** | **2** |
 
 ---
 
-## 🐛 What I Did
+## 🐛 Key Bugs Found (User Flow)
 
-- Designed 54 structured manual test cases across 2 modules
-- Executed all test scenarios on live FreshCart application
-- Identified and reported 11 bugs in Jira with full details
-- Added 2 improvement suggestions for better UX and security
-- Documented all bugs with screenshots and evidence on GitHub
-- Linked all Jira tickets to GitHub documentation
+- 🔴 Search returns irrelevant results (wrong matching logic)
+- 🔴 No feedback message when search returns no results
+- 🔴 Cart shows blank page after removing last item
+- 🔴 Minus button still clickable at quantity = 1
+- 🔴 No feedback for invalid numeric search
 
 ---
 
@@ -57,11 +61,16 @@ Apply software testing concepts by designing and executing structured test cases
 
 | Tool | Purpose |
 |---|---|
-| **Jira** | Bug tracking and ticket management |
-| **GitHub** | Version control and documentation |
-| **Google Sheets** | Test case design and execution |
-| **Browser DevTools** | Network inspection and bug investigation |
-| **Manual Testing** | Test execution techniques |
+| Jira | Bug tracking |
+| GitHub | Documentation |
+| Google Sheets | Test cases |
+| DevTools | Debugging |
+| Manual Testing | Execution |
 
-## Summary
-This project demonstrates my transition from Frontend Development to Software Testing, with focus on manual QA practices, test case design, and defect reporting.
+---
+
+## 💡 Summary
+
+This project reflects my transition from Frontend Development to Software Testing.
+
+I am not only testing individual features, but also validating full user journeys, identifying real-world issues, and improving overall user experience.
