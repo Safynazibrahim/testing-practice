@@ -1,59 +1,117 @@
 # FreshCart Testing Project
 
-This project is a manual testing practice on a real e-commerce web application (FreshCart), originally developed as a frontend project. The goal is to apply professional software testing concepts including test case design, test execution, bug reporting, and documentation.
+This project is a complete manual testing practice on a real e-commerce web application (FreshCart), originally developed as a frontend project.
+
+The goal of this project is to apply professional software testing concepts including:
+
+- Test case design
+- Test execution
+- Bug reporting
+- Test documentation
+- End-to-End validation
 
 ---
 
-## 📌 Project Objective
+# 📌 Project Objective
 
-Apply software testing concepts by designing and executing structured test cases for FreshCart functionalities, reporting bugs using Jira, and documenting all findings professionally on GitHub.
+To practice real-world software testing by validating the full user journey of an e-commerce application, identifying defects, reporting bugs professionally using Jira, and documenting all findings on GitHub.
 
 ---
 
-## 🔍 Scope of Testing
+# 🔍 Testing Scope
 
-### ✅ Login Functionality (Completed)
-- Valid & invalid login scenarios
-- Input validation
-- Negative testing
-
-### ✅ Register Functionality (Completed)
-- Full validation for all fields (Name, Email, Password, Repassword, Phone)
-- Boundary Value Analysis & Equivalence Partitioning
-
-### ✅ User Flow Testing (NEW 🔥)
-End-to-end testing covering real user journey:
-
-- Login → Browse → Search → View Product → Add to Cart → Manage Cart
+## ✅ Login Testing (Completed)
 
 Covered:
-- Product listing & UI validation
-- Search functionality (valid, invalid, edge cases)
-- Product details & images slider
-- Add to cart & toast behavior
-- Cart operations (زيادة / تقليل / حذف)
-- Cart persistence (refresh + re-login)
+
+- Valid login scenarios
+- Invalid credentials
+- Input validation
+- Negative test cases
+
+Results:
+
+- Test Cases: 10
+- Bugs Found: 3
+- Improvements: 1
 
 ---
 
-## 📊 Testing Summary
+## ✅ Register Testing (Completed)
 
-| Module | Total Test Cases | Bugs Found | Improvements |
+Covered:
+
+- Name validation
+- Email validation
+- Password validation
+- Repassword validation
+- Phone validation
+
+Applied techniques:
+
+- Boundary Value Analysis
+- Equivalence Partitioning
+
+Results:
+
+- Test Cases: 44
+- Bugs Found: 8
+- Improvements: 1
+
+---
+
+## ✅ User Flow Testing (Completed)
+
+End-to-End user journey:
+
+Login → Browse → Search → View Product → Add to Cart → Manage Cart
+
+Covered:
+
+- Product listing validation
+- Search validation
+- Product details
+- Add to cart behavior
+- Cart operations
+- Cart persistence
+
+Results:
+
+- Test Cases: 30
+- Bugs Found: 3
+- Improvements: 2
+
+---
+
+## ✅ Checkout Flow Testing (Completed)
+
+End-to-End payment flow:
+
+Checkout → Payment → Order Confirmation
+
+Covered:
+
+- Checkout form validation
+- Payment validation
+- Redirect behavior
+- Cart behavior after payment
+
+Results:
+
+- Test Cases: 17
+- Bugs Found: 3
+
+---
+
+# 📊 Project Summary
+
+| Module | Test Cases | Bugs | Improvements |
 |---|---|---|---|
 | Login | 10 | 3 | 1 |
 | Register | 44 | 8 | 1 |
-| User Flow | 30 | 5 | 0 |
-| **Total** | **84** | **16** | **2** |
-
----
-
-## 🐛 Key Bugs Found (User Flow)
-
-- 🔴 Search returns irrelevant results (wrong matching logic)
-- 🔴 No feedback message when search returns no results
-- 🔴 Cart shows blank page after removing last item
-- 🔴 Minus button still clickable at quantity = 1
-- 🔴 No feedback for invalid numeric search
+| User Flow | 30 | 3 | 2 |
+| Checkout | 17 | 3 | 0 |
+| **Total** | **101** | **17** | **4** |
 
 ---
 
@@ -69,8 +127,24 @@ Covered:
 
 ---
 
-## 💡 Summary
+# 🧠 Testing Techniques Applied
 
-This project reflects my transition from Frontend Development to Software Testing.
+- Positive Testing
+- Negative Testing
+- Boundary Value Analysis
+- Equivalence Partitioning
+- End-to-End Testing
+- Error Guessing
+- UI / UX Validation
 
-I am not only testing individual features, but also validating full user journeys, identifying real-world issues, and improving overall user experience.
+---
+
+# 🚀 Next Learning Journey
+
+After completing end-to-end web testing on FreshCart, my next step is:
+
+- API Testing using Postman
+- Mobile Application Testing (Android)
+- Expanding deeper into software quality engineering
+
+This repository represents my transition from Frontend Development to Software Testing.
